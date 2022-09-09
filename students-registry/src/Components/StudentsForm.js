@@ -51,7 +51,7 @@ function StudentForm({postStudent, schools}){
 //             </form>
 //         </div>
         
-//     )
-// }
+    )
+}
 
-// export default StudentForm
+export default StudentForm
