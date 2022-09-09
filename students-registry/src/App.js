@@ -2,7 +2,7 @@ import React from 'react';
 // import { useState, useEffect } from 'react'
 // import StudentCard from './Components/StudentCard';
 // import StudentForm from './Components/StudentsForm';
-// import Search from './Components/Search';
+import Search from './Components/Search';
 
 function App() {
 //   const [students, setStudents] = useState([])
@@ -65,9 +65,9 @@ function App() {
 //       setStudents(students.filter(st => st.id !== id))
 //     })
 //   }
-//   const displayedStudent = students.filter((student) =>
-//   student.student_name.toLowerCase().includes(search.toLowerCase())
-// );
+  const displayedStudent = students.filter((student) =>
+  student.student_name.toLowerCase().includes(search.toLowerCase())
+);
   return (
     <div className="App">
        
