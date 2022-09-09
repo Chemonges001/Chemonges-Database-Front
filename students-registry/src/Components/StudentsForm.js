@@ -1,13 +1,13 @@
-// import React, { useEffect, useState} from 'react'
+import React, { useEffect, useState} from 'react'
 
 
-// function StudentForm({postStudent, schools}){
-//     const [formData, setFormData] = useState([])
-//     useEffect(() => {
-//         fetch("http://localhost:9292/students")
-//           .then((r) => r.json())
-//           .then((formData) => setFormData(formData));
-//       }, []);
+function StudentForm({postStudent, schools}){
+    const [formData, setFormData] = useState([])
+    useEffect(() => {
+        fetch("http://localhost:9292/students")
+          .then((r) => r.json())
+          .then((formData) => setFormData(formData));
+      }, []);
     
 //     const handleChange = (e) => {
 //         setFormData({...formData, [e.target.name]:e.target.value})
