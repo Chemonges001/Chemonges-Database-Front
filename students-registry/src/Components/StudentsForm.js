@@ -17,11 +17,11 @@ function StudentForm({postStudent, schools}){
         e.preventDefault()
         postStudent(formData)
     } 
-//     return(
-//         <div className='student_form'>
-//             <header>
-//             <h1 className='title'>Student Database</h1>
-//             </header>
+    return(
+        <div className='student_form'>
+            <header>
+            <h1 className='title'>Student Database</h1>
+            </header>
             
 //             <form onSubmit={handleSubmit}>
 //                 <label>
