@@ -5,9 +5,9 @@ import StudentForm from './Components/StudentsForm';
 import Search from './Components/Search';
 
 function App() {
-//   const [students, setStudents] = useState([])
-//   const [schools, setSchools] = useState([])
-//   const [search, setSearch] = useState("");
+  const [students, setStudents] = useState([])
+  const [schools, setSchools] = useState([])
+  const [search, setSearch] = useState("");
 
 //   useEffect(()=> {
 //   //Gets schools and students
