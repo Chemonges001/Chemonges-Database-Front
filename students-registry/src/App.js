@@ -9,11 +9,11 @@ function App() {
   const [schools, setSchools] = useState([])
   const [search, setSearch] = useState("");
 
-//   useEffect(()=> {
-//   //Gets schools and students
-//     fetch('http://localhost:9292/students')
-//     .then(res => res.json())
-//     .then(setStudents)
+  useEffect(()=> {
+  //Gets schools and students
+    fetch('http://localhost:9292/students')
+    .then(res => res.json())
+    .then(setStudents)
     
 //     fetch('http://localhost:9292/schools')
 //     .then(res => res.json())
