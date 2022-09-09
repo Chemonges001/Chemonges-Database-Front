@@ -1,6 +1,6 @@
 import React from 'react';
 // import { useState, useEffect } from 'react'
-// import StudentCard from './Components/StudentCard';
+import StudentCard from './Components/StudentCard';
 // import StudentForm from './Components/StudentsForm';
 import Search from './Components/Search';
 
