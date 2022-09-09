@@ -54,17 +54,17 @@ function App() {
       }))
     })
   } 
-// //Deletes student
-//   const handleDelete = (id) => {
-//     fetch(`http://localhost:9292/students/${id}`,{
-//       method:'DELETE',
-//       headers:{'Content-Type':'application/json'}
-//     })
-//     .then(res => res.json())
-//     .then(() => {
-//       setStudents(students.filter(st => st.id !== id))
-//     })
-//   }
+//Deletes student
+  const handleDelete = (id) => {
+    fetch(`http://localhost:9292/students/${id}`,{
+      method:'DELETE',
+      headers:{'Content-Type':'application/json'}
+    })
+    .then(res => res.json())
+    .then(() => {
+      setStudents(students.filter(st => st.id !== id))
+    })
+  }
   const displayedStudent = students.filter((student) =>
   student.student_name.toLowerCase().includes(search.toLowerCase())
 );
