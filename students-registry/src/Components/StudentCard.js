@@ -2,7 +2,7 @@ import React from "react";
 
 function StudentCard({student, patchStudent, handleDelete}){
 console.log(student)
-//       return(
+      return(
 //         <div className='container'>
 //           <div className='student_card'>
 //             <h3>Name: {student.student_name}</h3>
@@ -13,8 +13,8 @@ console.log(student)
 //             <button onClick={()=> patchStudent(student)}>Edit Details</button> 
 //             <button onClick={() => handleDelete(student.id)}>Delete Student</button>
 //           </div>
-//         </div>
-//         )
-//     }
+        </div>
+        )
+    }
     
 //     export default StudentCard;
