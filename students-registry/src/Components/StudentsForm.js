@@ -9,9 +9,9 @@ function StudentForm({postStudent, schools}){
           .then((formData) => setFormData(formData));
       }, []);
     
-//     const handleChange = (e) => {
-//         setFormData({...formData, [e.target.name]:e.target.value})
-//     }
+    const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]:e.target.value})
+    }
 
 //     const handleSubmit = (e) => {
 //         e.preventDefault()
