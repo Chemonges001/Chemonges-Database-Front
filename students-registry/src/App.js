@@ -34,26 +34,26 @@ function App() {
       setStudents([newStudent,...students])
     })
   }
-// //patches student
-//   const patchStudent = (student) => {
-//     fetch(`http://localhost:9292/students/${student.id}`,{
-//       method:'PATCH',
-//       headers:{
-//         'Content-Type':'application/json'
-//       },
-//       body: JSON.stringify({...student, active: false})
-//     })
-//     .then(res => res.json())
-//     .then(data => {
-//       setStudents(students.map(st => {
-//         if(st.id === data.id){
-//           return data
-//         } else {
-//           return st
-//         }
-//       }))
-//     })
-//   } 
+//patches student
+  const patchStudent = (student) => {
+    fetch(`http://localhost:9292/students/${student.id}`,{
+      method:'PATCH',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify({...student, active: false})
+    })
+    .then(res => res.json())
+    .then(data => {
+      setStudents(students.map(st => {
+        if(st.id === data.id){
+          return data
+        } else {
+          return st
+        }
+      }))
+    })
+  } 
 // //Deletes student
 //   const handleDelete = (id) => {
 //     fetch(`http://localhost:9292/students/${id}`,{
