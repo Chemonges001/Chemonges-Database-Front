@@ -17,4 +17,4 @@ console.log(student)
         )
     }
     
-//     export default StudentCard;
+    export default StudentCard;
