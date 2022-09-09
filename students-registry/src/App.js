@@ -15,10 +15,10 @@ function App() {
     .then(res => res.json())
     .then(setStudents)
     
-//     fetch('http://localhost:9292/schools')
-//     .then(res => res.json())
-//     .then(setSchools)
-//   },[])
+    fetch('http://localhost:9292/schools')
+    .then(res => res.json())
+    .then(setSchools)
+  },[])
 
 //   //Creates a Student
 //   const postStudent = (student) => {
