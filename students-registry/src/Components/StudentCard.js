@@ -1,7 +1,7 @@
-// import React from "react";
+import React from "react";
 
-// function StudentCard({student, patchStudent, handleDelete}){
-// console.log(student)
+function StudentCard({student, patchStudent, handleDelete}){
+console.log(student)
 //       return(
 //         <div className='container'>
 //           <div className='student_card'>
