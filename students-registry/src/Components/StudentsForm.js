@@ -13,10 +13,10 @@ function StudentForm({postStudent, schools}){
         setFormData({...formData, [e.target.name]:e.target.value})
     }
 
-//     const handleSubmit = (e) => {
-//         e.preventDefault()
-//         postStudent(formData)
-//     } 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        postStudent(formData)
+    } 
 //     return(
 //         <div className='student_form'>
 //             <header>
