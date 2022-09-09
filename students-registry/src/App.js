@@ -20,20 +20,20 @@ function App() {
     .then(setSchools)
   },[])
 
-//   //Creates a Student
-//   const postStudent = (student) => {
-//     fetch('http://localhost:9292/students',{
-//       method:'POST',
-//       headers:{
-//         'Content-Type':'application/json',
-//       },
-//       body: JSON.stringify(student)
-//     })
-//     .then(res => res.json())
-//     .then(newStudent => {
-//       setStudents([newStudent,...students])
-//     })
-//   }
+  //Creates a Student
+  const postStudent = (student) => {
+    fetch('http://localhost:9292/students',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+      },
+      body: JSON.stringify(student)
+    })
+    .then(res => res.json())
+    .then(newStudent => {
+      setStudents([newStudent,...students])
+    })
+  }
 // //patches student
 //   const patchStudent = (student) => {
 //     fetch(`http://localhost:9292/students/${student.id}`,{
